@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    // Strict type checking - great for learning TypeScript!
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+
+    // Additional checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+
+    // Module settings
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    // Output settings
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "skipLibCheck": true,
+
+    // Emit settings (tsx handles compilation, but useful for IDE)
+    "noEmit": true,
+
+    // Path settings
+    "baseUrl": ".",
+    "resolveJsonModule": true
+  },
+  "include": ["*.ts"],
+  "exclude": ["node_modules"]
+}

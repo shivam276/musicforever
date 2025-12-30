@@ -1,0 +1,43 @@
+{
+  "name": "musicforever",
+  "version": "1.0.0",
+  "description": "AI-powered infinite music generator",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsx index.ts",
+    "dev": "tsx watch index.ts",
+    "lofi": "tsx index.ts lo-fi+study",
+    "jazz": "tsx index.ts jazz+cafe",
+    "ambient": "tsx index.ts ambient+relax",
+    "techno": "tsx index.ts techno+code",
+    "house": "tsx index.ts house+focus",
+    "clear": "tsx index.ts --clear-all",
+    "list": "tsx index.ts --list",
+    "test:drums": "tsx src/test-drums.ts",
+    "test:drums:list": "tsx src/test-drums.ts --list",
+    "test:segment": "tsx src/test-segment.ts",
+    "test:lofi": "tsx src/test-segment.ts lofi",
+    "test:jazz": "tsx src/test-segment.ts jazz",
+    "test:house": "tsx src/test-segment.ts house",
+    "test:ambient": "tsx src/test-segment.ts ambient"
+  },
+  "keywords": [
+    "music",
+    "ai",
+    "generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "midi-writer-js": "^3.1.1",
+    "openai": "^6.15.0",
+    "tonal": "^6.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
